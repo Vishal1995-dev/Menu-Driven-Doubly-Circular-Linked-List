@@ -106,9 +106,7 @@ void InsertLast(PPNODE Head,PPNODE Tail,int value)
 void InsertAtPos(PPNODE Head,PPNODE Tail,int value,int pos)
 {
 	int cnt=Count(*Head,*Tail);
-	printf("\n");
-	printf("%d",cnt);
-	printf("\n");
+
 	if(pos<1 || pos>cnt+1)
 	{
 		return;
@@ -134,7 +132,6 @@ void InsertAtPos(PPNODE Head,PPNODE Tail,int value,int pos)
 		for(i=0;i<pos-2;i++)
 		{
 			temp=temp->next;
-			printf("\n%d\t",temp->data);
 		}
 		newn->next=temp->next;
 		newn->next->prev=newn;
